@@ -15,8 +15,7 @@
     background: rgba( 255, 255, 255, 0.1 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
-border: 1px solid rgba( 255, 255, 255, 0.18 ); /* Black background color */
+-webkit-backdrop-filter: blur( 4px ); /* Black background color */
     position: fixed; /* Make it stick/fixed */
     top: 0px; /* Hide the navbar 50 px outside of the top view */
     width: 100%; /* Full width */
@@ -37,39 +36,6 @@ border: 1px solid rgba( 255, 255, 255, 0.18 ); /* Black background color */
     background-color:#10072C;
     color: white;
   }
-  /*ul {
-    position: fixed;
-    float: right;
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #10072C;
-    z-index: 2;
-  }
-  
-  li {
-    /*float: right;*/
-    /*position: fixed;
-    font-family: 'Montserrat';
-    font-size: 18px;
-    z-index: 2;
-  }
-  
-  li a {
-    float: right;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 25px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }*/
   #start{
     display: flex;
     flex-direction: row;
@@ -247,9 +213,10 @@ border: 1px solid rgba( 255, 255, 255, 0.18 ); /* Black background color */
   #premium-card{
     margin: auto;
     text-align: center;
+    justify-content: center;
     margin-top: 64px;
-    width: 400px;
-    height: 606px;
+    width: 300px;
+    height: 500px;
     background: rgba( 38, 26, 75, 0.2 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
@@ -270,4 +237,94 @@ border: 1px solid rgba( 255, 255, 255, 0.18 ); /* Black background color */
     padding-top: 64px;
     color: white;
     font-family: 'Montserrat';
+  }
+  #end-back{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+  #end-text{
+    max-width: 505px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-top: 100px;
+    padding-right: 172px;
+  }
+  #todo_12{
+    padding-top: 28px;
+    padding-bottom: 100px;
+    max-width: 631px;
+    max-height: 699px;
+  }
+  #get-app{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+  }
+  #stores{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+  #google{
+    padding-top: 133px;
+    width: 217px;
+    height: 64px;
+  }
+  #appstore{
+    padding-top: 16px;
+    width: 217px;
+    height: 64px;
+  }
+  #qr-code{
+    padding-top: 133px;
+    padding-left: 32px;
+    width: 144px;
+    height: 144px;
+  }
+  #about{
+    color: white;
+  }
+  #follow{
+    color: white;
+  }
+  .about-head{
+    font-size: 12px;
+    font-weight: bold;
+  }
+  #follow-head{
+    font-size: 12px;
+    font-weight: bold;
+  }
+  p{
+    padding-top: 12px;
+    font-size: 12px;
+  }
+  li{
+    color: white;
+    font-size: 18px;
+    padding-top: 24px;
+  }
+  ul{
+    padding-left: 64px;
+    text-align: left;
+    justify-content: center;
+  }
+  #btn-get{
+    /*max-width: 200px;*/
+    width: auto;
+    margin-top: 64px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 32px;
+    margin-right: 32px;
+    background-color: palevioletred;
+    justify-content: center;
+    text-align: center;
+    border-radius: 38px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
   }
