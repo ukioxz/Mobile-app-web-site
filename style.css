@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
     /*background-color: #10072C;*/
   }
   body{
@@ -197,7 +198,7 @@ backdrop-filter: blur( 4px );
   #menu-back{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: right;
     position: relative;
     height: 20vh;
     width: auto;
@@ -286,15 +287,21 @@ backdrop-filter: blur( 4px );
   }
   #about{
     color: white;
+    text-align: left;
+    padding-right: 100px;
   }
   #follow{
     color: white;
+    text-align: left;
+    padding-right: 100px;
   }
-  .about-head{
+  #about-head{
+    padding-top: 12px;
     font-size: 12px;
     font-weight: bold;
   }
   #follow-head{
+    padding-top: 12px;
     font-size: 12px;
     font-weight: bold;
   }
