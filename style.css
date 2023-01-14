@@ -12,11 +12,11 @@
   #navbar {
     z-index: 2;
     font-family: 'Montserrat';
-    font-size: 18px;
+    font-size: 15px;
     background: rgba( 255, 255, 255, 0.1 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px ); /* Black background color */
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px ); /* Black background color */
     position: fixed; /* Make it stick/fixed */
     top: 0px; /* Hide the navbar 50 px outside of the top view */
     width: 100%; /* Full width */
@@ -68,6 +68,16 @@ backdrop-filter: blur( 4px );
     height: auto;
     letter-spacing: 1.2px;
   }
+  @keyframes run-anim {
+    0% {
+      opacity: 0.2;
+      padding-left: 0px;
+    }
+    100% {
+      opacity: 1.0;
+      padding-left: 100px;
+     }
+  }
   #start-mocks{
     /*float: right;*/
     /*position: absolute;
@@ -78,6 +88,9 @@ backdrop-filter: blur( 4px );
     padding-left: 100px;
     max-width: 631px;
     max-height: 699px;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-name: run-anim;
+    -webkit-animation-duration: 1s;
   }
   #start-buttons{
     display: flex;
@@ -107,7 +120,7 @@ backdrop-filter: blur( 4px );
     text-align: center;
     /*justify-content: center;*/
     position: relative;
-    height: 350vh;
+    height: 300vh;
     width: auto;
     background-color: #0c0c0c;
     color: white;
@@ -224,6 +237,11 @@ backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 38px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: 0.1s;
+  }
+  #premium-card:hover{
+    box-shadow: 0 8px 50px 0 rgba( 31, 38, 135, 0.37 );
+    border: 1px solid rgba( 255, 255, 255, 0.30 );
   }
   #num-head{
     text-align: center;
@@ -321,17 +339,103 @@ backdrop-filter: blur( 4px );
   }
   #btn-get{
     /*max-width: 200px;*/
+    cursor: pointer;
     width: auto;
     margin-top: 64px;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-left: 32px;
     margin-right: 32px;
-    background-color: palevioletred;
+    background-color: rgb(143, 0, 255);
     justify-content: center;
     text-align: center;
     border-radius: 38px;
     color: white;
     font-size: 24px;
     font-weight: bold;
+    transition: 0.5s;
+  }
+  #btn-get:hover{
+    background-color: rgb(255, 0, 245);
+  }
+
+  @media (max-width: 1200px){
+    body{
+      max-width:1100px;
+      overflow-x: hidden;
+    }
+    #start{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      position: relative;
+      height: 100vh;
+      width: auto;
+      background-color: #10072C;
+      text-align: center;
+    }
+    #text-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 100px;
+    }
+    #start-mocks{
+      /*float: right;*/
+      /*position: absolute;
+      right: 100px;
+      top: 120px;*/
+      padding-top: 200px;
+      padding-bottom: 100px;
+      margin-right: 100px;
+      max-width: 431px;
+      max-height: 499px;
+      -webkit-animation: slide 0.5s forwards;
+      -webkit-animation-name: run-anim;
+      -webkit-animation-duration: 1s;
+    }
+  }
+  @media (max-width: 600px){
+    body{
+      max-width:none;
+      margin-right: 0;
+    }
+    #start{
+      display: flex;
+      flex-direction:column-reverse;
+      justify-content: center;
+      position: relative;
+      height: 100vh;
+      width: auto;
+      background-color: #10072C;
+      text-align: center
+    }
+    #text-container{
+      display: flex;
+      padding-left: 0px;
+      padding-top: 0px;
+      text-align: center;
+      margin: auto;
+      flex-direction: column;
+      justify-content: center;
+    }
+    #start-text-header{
+      max-width: 400px;
+    }
+    #start-description{
+      max-width: 400px;
+    }
+    #start-mocks{
+      /*float: right;*/
+      /*position: absolute;
+      right: 100px;
+      top: 120px;*/
+      padding-top: 100px;
+      padding-bottom: 30px;
+      max-width: 331px;
+      max-height: 399px;
+      -webkit-animation: slide 0.5s forwards;
+      -webkit-animation-name: run-anim;
+      -webkit-animation-duration: 1s;
+    }
   }
