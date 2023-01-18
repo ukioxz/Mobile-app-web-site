@@ -23,7 +23,7 @@
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
     z-index: 13;
   }
-  
+
   /* Style the navbar links */
   #navbar a {
     float: right;
@@ -33,7 +33,7 @@
     padding: 15px;
     text-decoration: none;
   }
-  
+
   #navbar a:hover {
     background-color:#10072C;
     color: white;
@@ -104,16 +104,34 @@
     letter-spacing: 1.2px;
   }
   #btn-buy{
-    background-color: purple;
+    background-color: rgb(255, 0, 245);
     border-radius: 38px;
     padding: 17px 30px 17px 30px;
     margin-right: 32px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+  #btn-buy:hover{
+    padding: 17px 60px 17px 60px;
+    box-shadow: 0 8px 50px 0 rgba( 31, 38, 135, 0.50 );
+    border: 1px solid rgba( 255, 255, 255, 0.50 );
   }
   #btn-free{
     background-color: blueviolet;
     border-radius: 38px;
     padding: 17px 30px 17px 30px;
     margin-left: 32px;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+  #btn-free:hover{
+    padding: 17px 60px 17px 60px;
+    box-shadow: 0 8px 50px 0 rgba( 31, 38, 135, 0.50 );
+    border: 1px solid rgba( 255, 255, 255, 0.50 );
   }
   #features{
     display: flex;
@@ -137,15 +155,15 @@
     margin-top: 64px;
   }
   #feature-01{
-    padding-top: 128px;
+    padding-top: 32px;
     padding-bottom: 100px;
-    max-width: 631px;
-    max-height: 699px;
+    max-width: 531px;
+    max-height: 599px;
   }
   #feature-01-text{
     max-width: 505px;
     text-align: left;
-    padding-top: 400px;
+    padding-top: 250px;
     padding-right: 205px;
     padding-left: 95px;
     color: white;
@@ -160,30 +178,30 @@
     padding-top: 32px;
   }
   #feature-02{
-    padding-top: 128px;
+    padding-top: 32px;
     padding-bottom: 100px;
-    max-width: 631px;
-    max-height: 699px;
+    max-width: 531px;
+    max-height: 599px;
   }
   #feature-02-text{
     max-width: 505px;
     text-align: left;
-    padding-top: 400px;
+    padding-top: 250px;
     padding-right: 205px;
     padding-left: 95px;
     color: white;
     font-family: 'Montserrat';
   }
   #feature-03{
-    padding-top: 128px;
+    padding-top: 32px;
     padding-bottom: 100px;
-    max-width: 631px;
-    max-height: 699px;
+    max-width: 531px;
+    max-height: 599px;
   }
   #feature-03-text{
     max-width: 505px;
     text-align: left;
-    padding-top: 400px;
+    padding-top: 250px;
     padding-right: 205px;
     padding-left: 95px;
     color: white;
@@ -218,19 +236,21 @@
     height: 20vh;
     width: auto;
     background-color: #0c0c0c;
-    text-align: center
+    text-align: center;
+    bottom: 0px;
   }
   #premium-back{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    height: 105vh;
   }
   #premium-card{
     margin: auto;
     text-align: center;
     justify-content: center;
-    margin-top: 64px;
+    margin-top: 32px;
     width: 300px;
     height: 500px;
     background: rgba( 38, 26, 75, 0.2 );
@@ -244,7 +264,7 @@
   #premium-card:hover{
     box-shadow: 0 8px 50px 0 rgba( 31, 38, 135, 0.37 );
     border: 1px solid rgba( 255, 255, 255, 0.30 );
-    margin-top: 60px;
+    margin-top: 28px;
   }
   #num-head{
     text-align: center;
@@ -408,7 +428,7 @@
     height: 400px;
     border-radius: 50%;
     filter: blur(300px);
-    top:2800px;
+    top:2000px;
     z-index: 10;
   }
   #elip-6{
@@ -418,9 +438,9 @@
     height: 400px;
     border-radius: 50%;
     filter: blur(200px);
-    top:4000px;
+    top:3100px;
     z-index: 10;
-    left:0px;
+    left:-200px;
   }
   #elip-7{
     position:absolute;
@@ -429,7 +449,7 @@
     height: 400px;
     border-radius: 50%;
     filter: blur(200px);
-    top:4200px;
+    top:3200px;
     right:0px;
     z-index: 10;
   }
