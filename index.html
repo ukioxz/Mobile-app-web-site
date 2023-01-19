@@ -9,11 +9,53 @@
 </head>
 <body>
 <div id="navbar">
-  <a href="#contact">Contact</a>
+  <a href="#contact" onclick="showSignUp()">Contact</a>
   <a href="#end-back">Start</a>
   <a href="#premium-back">Premium</a>
   <a href="#features">Features</a>
   <a href="#start">Home</a>
+</div>
+<div class="overlay" id="contact">
+  <div class="wrapper">
+    <h2>Sign up</h2>
+    <a href="#" class="close" onclick="closeSignUp()">&times;</a>
+    <div class="content">
+      <div class="container">
+        <form>
+          <label>Email</label>
+          <input type="text" placeholder="Email">
+          <label>Username</label>
+          <input type="text" placeholder="Username">
+          <label>Password</label>
+          <input type="text" placeholder="Password">
+          <input type="submit" value="submit">
+          <div class="signup_link">
+                Already a member? <a href="#login" onclick="showLogin()">Log in</a>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="overlayLogin" id="login">
+  <div class="wrapper">
+    <h2>Sign up</h2>
+    <a href="#" class="close" onclick="closeSignUp()">&times;</a>
+    <div class="content">
+      <div class="container">
+        <form>
+          <label>Email</label>
+          <input type="text" placeholder="Email">
+          <label>Password</label>
+          <input type="text" placeholder="Password">
+          <input type="submit" value="submit">
+          <div class="signup_link">
+                Not a member? <a href="#contact" onclick="showSignUp()">Sign up</a>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
 <section id="start">
   <div id="text-container">
@@ -72,7 +114,7 @@
       <li>Calendar widgets</li>
       <li>Estimated Pomo</li>
       <li>Quick Ball for Android</li>
-    </ul> 
+    </ul>
     <div id="btn-get">Get it now</div>
   </div>
 </section>
@@ -112,4 +154,5 @@
   </div>
 </div>
 </body>
+ <script src="index.js" charset="utf-8"></script>
 </html>
