@@ -23,12 +23,12 @@
       <div class="container">
         <form>
           <label>Email</label>
-          <input type="text" placeholder="Email">
+          <input type="text" placeholder="Email" value="" id="email-check">
           <label>Username</label>
-          <input type="text" placeholder="Username">
+          <input type="text" placeholder="Username" value="">
           <label>Password</label>
-          <input type="text" placeholder="Password">
-          <input type="submit" value="submit">
+          <input type="text" placeholder="Password" value="">
+          <input type="submit" id="submit-btn" value="submit">
           <div class="signup_link">
                 Already a member? <a href="#login" onclick="showLogin()">Log in</a>
             </div>
@@ -39,7 +39,7 @@
 </div>
 <div class="overlayLogin" id="login">
   <div class="wrapper">
-    <h2>Sign up</h2>
+    <h2>Login</h2>
     <a href="#" class="close" onclick="closeSignUp()">&times;</a>
     <div class="content">
       <div class="container">
