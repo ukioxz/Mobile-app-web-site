@@ -27,9 +27,7 @@ const validRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 submitBtn.addEventListener('click', (event) => {
   const emailValue = document.getElementById('email-check').value;
   console.log(emailValue)
-  if (validRegex.test(emailValue)){
-    alert("good")
-  } else {
-    alert ("try again")
+  if (!validRegex.test(emailValue)){
+    alert("Incorrect email")
   }
 })

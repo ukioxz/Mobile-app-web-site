@@ -9,7 +9,7 @@
 </head>
 <body>
 <div id="navbar">
-  <a href="#contact" onclick="showSignUp()">Contact</a>
+  <a href="#contact" onclick="showSignUp()">Sign Up</a>
   <a href="#end-back">Start</a>
   <a href="#premium-back">Premium</a>
   <a href="#features">Features</a>
@@ -62,8 +62,8 @@
     <div id="start-text-header">Mobile Todo app</div>
     <div id="start-description">Mobile Todo app is a free to-do list, planner and calendar app for managing and organizing your daily tasks, calendar events and more.</div>
     <div id="start-buttons">
-      <div id="btn-buy">Buy now</div>
-      <div id="btn-free">Free trial</div>
+      <div id="btn-buy" onclick="showSignUp()">Buy now</div>
+      <div id="btn-free" onclick="document.location = './todo.html'">Free trial</div>
     </div>
   </div>
   <img src="img/start_two_mocks.png" id="start-mocks" alt="">
@@ -115,7 +115,7 @@
       <li>Estimated Pomo</li>
       <li>Quick Ball for Android</li>
     </ul>
-    <div id="btn-get">Get it now</div>
+    <div id="btn-get" onclick="showSignUp()" >Get it now</div>
   </div>
 </section>
 <section id="end-back">
