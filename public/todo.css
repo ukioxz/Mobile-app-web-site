@@ -27,6 +27,8 @@ ul li {
   list-style-type: none;
   border-radius: 40px;
   background: rgba(246, 246, 246, 0.3);
+  color: rgb(255, 255, 225);
+  font-weight: bold;
   font-size: 18px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -36,7 +38,7 @@ ul li {
   user-select: none;
 }
 ul li:hover {
-  background: rgba(246, 246, 246, 0.5);
+  scale: 1.1;
 }
 
 ul li:nth-child(odd) {

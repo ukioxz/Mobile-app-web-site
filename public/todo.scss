@@ -35,6 +35,8 @@ ul li {
   list-style-type: none;
   border-radius: 40px;
   background: $whiteWind;
+  color: $whiteFont;
+  font-weight: bold;
   font-size: 18px;
   transition: 0.2s;
 
@@ -43,7 +45,7 @@ ul li {
   -ms-user-select: none;
   user-select: none;
   &:hover {
-    background: $whiteWindHover;
+    scale: 1.1;
   }
 }
 
