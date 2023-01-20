@@ -1,0 +1,190 @@
+@import url("https://fonts.cdnfonts.com/css/montserrat");
+body {
+  margin: 0;
+  min-width: 250px;
+  font-family: "Montserrat";
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(252, 105, 191)), to(rgb(116, 228, 225)));
+  background: linear-gradient(rgb(252, 105, 191), rgb(116, 228, 225));
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  margin: auto;
+  padding: 20px;
+}
+
+ul li {
+  cursor: pointer;
+  margin: auto;
+  width: 60%;
+  position: relative;
+  padding: 20px 8px 20px 40px;
+  margin-bottom: 30px;
+  list-style-type: none;
+  border-radius: 40px;
+  background: rgba(246, 246, 246, 0.3);
+  font-size: 18px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+ul li:hover {
+  background: rgba(246, 246, 246, 0.5);
+}
+
+ul li:nth-child(odd) {
+  background: rgba(246, 246, 246, 0.3);
+}
+ul li:nth-child(odd):hover {
+  background: rgba(246, 246, 246, 0.5);
+}
+
+ul li.checked {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(238, 110, 53)), to(rgb(248, 160, 42)));
+  background: linear-gradient(rgb(238, 110, 53), rgb(248, 160, 42));
+  color: #fff;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 20px 16px 20px 16px;
+}
+
+.fr-page {
+  height: 100vh;
+  width: auto;
+  padding-top: 64px;
+  font-weight: bold;
+}
+
+.create-header {
+  width: 600px;
+  height: 100px;
+  border-radius: 40px 40px 0px 0px;
+  background-color: rgb(255, 99, 249);
+  padding: 10px;
+}
+.create-header h2 {
+  font-size: 32px;
+}
+
+.header {
+  margin: auto;
+  background-color: rgba(246, 246, 246, 0.3);
+  padding: 0px 0px;
+  color: white;
+  text-align: center;
+  width: 600px;
+  height: 600px;
+  border-radius: 40px;
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input {
+  margin: auto;
+  border: none;
+  border-radius: 20px;
+  border-color: rgb(255, 255, 225);
+  border-width: 3px;
+  width: 75%;
+  padding: 10px;
+  font-size: 24px;
+  margin-top: 20px;
+  background-color: rgba(246, 246, 246, 0.3);
+  color: rgb(255, 255, 225);
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 100px;
+}
+
+.addBtn {
+  padding: 10px;
+  width: 30%;
+  margin: auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(238, 110, 53)), to(rgb(248, 160, 42)));
+  background: linear-gradient(rgb(238, 110, 53), rgb(248, 160, 42));
+  color: rgb(255, 255, 225);
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+.addBtn:hover {
+  scale: 1.1;
+}
+
+.category-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.c-btn {
+  padding: 10px;
+  width: 20%;
+  margin: auto;
+  background: rgba(246, 246, 246, 0.3);
+  color: rgb(255, 255, 225);
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+.c-btn:hover {
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}

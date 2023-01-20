@@ -1,0 +1,175 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+$pinkBack: rgba(252, 105, 191);
+$blueBack: rgba(116, 228, 225);
+$whiteWind: rgba(246, 246, 246, 0.3);
+$whiteWindHover: rgba(246, 246, 246, 0.5);
+$whiteFont: rgba(255, 255, 225);
+$headerRose: rgba(255,99,249);
+$btnOrange: linear-gradient(rgba(238, 110, 53), rgba(248,160,42));
+$boxShadow: rgba( 31, 38, 135, 0.37 );
+$setBoxShadow: 0 8px 32px 0 $boxShadow;
+
+body {
+  margin: 0;
+  min-width: 250px;
+  font-family: 'Montserrat';
+  background: linear-gradient($pinkBack, $blueBack);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: auto;
+  padding: 20px;
+}
+
+ul li {
+  cursor: pointer;
+  margin: auto;
+  width: 60%;
+  position: relative;
+  padding: 20px 8px 20px 40px;
+  margin-bottom: 30px;
+  list-style-type: none;
+  border-radius: 40px;
+  background: $whiteWind;
+  font-size: 18px;
+  transition: 0.2s;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  &:hover {
+    background: $whiteWindHover;
+  }
+}
+
+ul li:nth-child(odd) {
+  background:  $whiteWind;
+  &:hover {
+    background: $whiteWindHover;
+  }
+}
+
+
+ul li.checked {
+  background: $btnOrange;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 20px 16px 20px 16px;
+}
+
+.fr-page{
+  height: 100vh;
+  width: auto;
+  padding-top: 64px;
+  font-weight: bold;
+}
+.create-header{
+  width:600px;
+  height: 100px;
+  border-radius: 40px 40px 0px 0px;
+  background-color: $headerRose;
+  padding: 10px;
+  h2 {
+    font-size: 32px;
+  }
+}
+
+.header {
+  margin: auto;
+  background-color: $whiteWind;
+  padding: 0px 0px;
+  color: white;
+  text-align: center;
+  width:600px;
+  height: 600px;
+  border-radius: 40px;
+  box-shadow: $setBoxShadow;
+}
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input {
+  margin: auto;
+  border: none;
+  border-radius: 20px;
+  border-color: $whiteFont;
+  border-width: 3px;
+  width: 75%;
+  padding: 10px;
+  font-size: 24px;
+  margin-top: 20px;
+  background-color: $whiteWind;
+  color: $whiteFont;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 100px;
+}
+.addBtn {
+  padding: 10px;
+  width: 30%;
+  margin: auto;
+  background: $btnOrange;
+  color: $whiteFont ;
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 20px;
+  box-shadow: $setBoxShadow;
+   &:hover {
+     scale: 1.1;
+   }
+}
+
+.category-btn{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.c-btn{
+  padding: 10px;
+  width: 20%;
+  margin: auto;
+  background: $whiteWind;
+  color: $whiteFont ;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 20px;
+  &:hover {
+    box-shadow: $setBoxShadow;
+  }
+}

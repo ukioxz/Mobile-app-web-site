@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Mobile app</title>
+    <link rel="stylesheet" href="todo.css">
+  </head>
+  <body>
+    <div class="fr-page">
+    <div id="myDIV" class="header">
+      <div class="create-header">
+        <h2>Create new task</h2>
+      </div>
+      <div class="content">
+        <input type="text" id="myInput" placeholder="Enter title...">
+        <div class="category">
+          <h2>Category</h2>
+          <div class="category-btn">
+          <div class="c-btn"> Study</div>
+          <div class="c-btn">Work</div>
+          <div class="c-btn">Home</div>
+          </div>
+        </div>
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
+</div>
+</div>
+
+<ul id="myUL"></ul>
+  </body>
+  <script src="todo.js" charset="utf-8"></script>
+</html>
